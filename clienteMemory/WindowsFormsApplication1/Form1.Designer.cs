@@ -32,7 +32,6 @@
             this.connectButton = new System.Windows.Forms.Button();
             this.selectButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.partida = new System.Windows.Forms.TextBox();
             this.privadaButton = new System.Windows.Forms.RadioButton();
             this.equiposButton = new System.Windows.Forms.RadioButton();
             this.individualButton = new System.Windows.Forms.RadioButton();
@@ -47,6 +46,8 @@
             this.ModificarButton = new System.Windows.Forms.Button();
             this.edad = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.TextBox();
+            this.contLbl = new System.Windows.Forms.Label();
+            this.partida = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,15 +103,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Partidas";
             // 
-            // partida
-            // 
-            this.partida.Location = new System.Drawing.Point(264, 94);
-            this.partida.Margin = new System.Windows.Forms.Padding(4);
-            this.partida.Name = "partida";
-            this.partida.Size = new System.Drawing.Size(125, 22);
-            this.partida.TabIndex = 22;
-            this.partida.Text = "Id partida";
-            // 
             // privadaButton
             // 
             this.privadaButton.AutoSize = true;
@@ -122,7 +114,6 @@
             this.privadaButton.TabStop = true;
             this.privadaButton.Text = "Privada :";
             this.privadaButton.UseVisualStyleBackColor = true;
-            this.privadaButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // equiposButton
             // 
@@ -259,11 +250,31 @@
             this.nombre.TabIndex = 24;
             this.nombre.Text = "Nombre";
             // 
+            // contLbl
+            // 
+            this.contLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contLbl.Location = new System.Drawing.Point(473, 265);
+            this.contLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.contLbl.Name = "contLbl";
+            this.contLbl.Size = new System.Drawing.Size(197, 113);
+            this.contLbl.TabIndex = 26;
+            // 
+            // partida
+            // 
+            this.partida.Location = new System.Drawing.Point(264, 94);
+            this.partida.Margin = new System.Windows.Forms.Padding(4);
+            this.partida.Name = "partida";
+            this.partida.Size = new System.Drawing.Size(125, 22);
+            this.partida.TabIndex = 22;
+            this.partida.Text = "Idpartida";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 692);
+            this.Controls.Add(this.contLbl);
             this.Controls.Add(this.nombre);
             this.Controls.Add(this.edad);
             this.Controls.Add(this.ModificarButton);
@@ -304,11 +315,12 @@
         private System.Windows.Forms.TextBox UserBox;
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox partida;
         private System.Windows.Forms.RadioButton privadaButton;
         private System.Windows.Forms.Button ModificarButton;
         private System.Windows.Forms.TextBox edad;
         private System.Windows.Forms.TextBox nombre;
+        private System.Windows.Forms.Label contLbl;
+        private System.Windows.Forms.TextBox partida;
     }
 }
 
